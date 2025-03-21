@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+venv/
+env/
+*.env
+
+# IDE
+.vscode/
+.idea/
+
+# Build and distribution
+dist/
+build/
+*.egg-info/
+
+# Streamlit
+.streamlit/
