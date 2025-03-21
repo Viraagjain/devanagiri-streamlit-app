@@ -9,6 +9,7 @@ venv/
 env/
 *.env
 
+.devcontainer
 # IDE
 .vscode/
 .idea/
