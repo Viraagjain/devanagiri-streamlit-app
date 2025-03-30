@@ -35,7 +35,7 @@ def extract_text_from_image(image):
         st.error(f"Error extracting text: {str(e)}")
         return None
 
-def check_spelling(text, language='hi'):
+def check_spelling(text, language='en'):
     """Check spelling using spellchecker library"""
     try:
         spell = SpellChecker(language=language)
@@ -83,7 +83,7 @@ if uploaded_file is not None:
                 st.text_area("", extracted_text, height=150, label_visibility="collapsed")
                 
                 # Check spelling
-                mistakes = check_spelling(extracted_text, language='hi')
+                mistakes = check_spelling(extracted_text, language='en')
                 
                 if mistakes:
                     st.error(f"Found {len(mistakes)} potential spelling mistakes:")
