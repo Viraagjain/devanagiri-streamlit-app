@@ -10,7 +10,7 @@ def check_character(image):
 
 # --- Streamlit UI Setup ---
 st.set_page_config(page_title="Devanagari Character Checker", page_icon="📝", layout="centered")
-st.title("📖 Devanagari Handwriting Checker")
+st.title("📖 Devanagari Character Checker")
 st.write("Upload an image of a Devanagari character to check if it's written correctly.")
 
 # Sidebar Instructions
