@@ -1,9 +1,13 @@
 import streamlit as st
 import google.generativeai as genai
 from PIL import Image
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
+API_KEY=os.getenv("GENAI_API_KEY")
 # Configure Gemini API (replace with your actual API key)
-genai.configure(api_key='AIzaSyAhBAwIVkv7mb0OXYfVTl1W58HXmblUIi4')
+genai.configure(api_key=API_KEY)
 
 # Set page config
 st.set_page_config(
