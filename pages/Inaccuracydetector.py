@@ -98,7 +98,7 @@ def main():
         st.write(ocr_text)
 
         # Load the Devanagari model
-        model_path = "devanagiri.h5"  # Update this path
+        model_path = "model (1).h5"  # Update this path
         model = load_model(model_path)
 
         # Preprocess the image to extract characters
